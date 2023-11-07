@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+}
+
+#cabecalho {
+    display: flex;
+    background-color: green;
+    padding: 1vh;
+    justify-content: space-between;
+}
+
+.logotipo {
+    width: 100px;
+    height: auto;
+}
+
+#cabecalho-geral {
+    display: flex;
+    background-color: green;
+    padding: 2vh;
+    justify-content: space-between;
+}
+
+.logotipo-img {
+    width: 80px;
+    height: auto;
+}
+
+#procurar {
+    font-size: 2.3vh;
+    border-radius: 1vh;
+    border-style: none;
+}
+
+.anuncio {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+}
+
+.nav-anuncio {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row; /* Alteração para empilhar os elementos em telas menores */
+    align-items: center; /* Centralize os elementos na tela */
+}
+
+figcaption {
+    font-size: 4vh;
+    padding-top: 8vh;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralize os elementos na tela */
+}
+
+.img-servidor {
+    max-width: 100%; /* Evita que as imagens sejam maiores que a largura da tela */
+    height: auto;
+}
+
+.rodape {
+    background-color: green;
+    padding: 10vh;
+}
+
+/* Media query para telas menores (dispositivos móveis) */
+@media (max-width: 767px) {
+    #cabecalho {
+        flex-direction: column;
+        align-items: center; /* Centralize os elementos na coluna */
+    }
+
+    #cabecalho-geral {
+        flex-direction: column;
+    }
+
+    .logotipo, .logotipo-img {
+        width: 60px;
+    }
+
+    #procurar {
+        font-size: 2vh;
+    }
+
+    .anuncio, .nav-anuncio {
+        padding: 2vh;
+    }
+
+    .principal {
+        flex-direction: column;
+        padding: 2vh;
+    }
+
+    figcaption {
+        font-size: 3vh;
+        padding-top: 4vh;
+    }
+
+    .img-servidor {
+        width: 100%;
+    }
+
+    .rodape {
+        padding: 5vh;
+    }
+    
+    /* Remova a imagem na visualização móvel */
+    .anuncio img {
+        display: none;
+    }
+
+    #procurar {
+        display: none; /* Oculte a entrada de busca */
+    }
+
+    p{
+        color: blue;
+    }
+}
